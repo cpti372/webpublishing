@@ -1,0 +1,42 @@
+#Box{
+  width: 640px;
+  background-color: lightpink;
+  margin: 10px auto;
+  padding:10px;
+  height: 640px;
+}
+
+#Box>div:first-child{
+  padding-left: 12px;
+}
+
+#Box> div:nth-child(2){
+  width: 50%
+  border-right: dashed 1px black;
+  float: left;
+  /*자식 요소에 플로트 배치 지정시 배경색상이 보이지 않게 되는 경우  height값 지정.*/
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 2,3번째 이미지가 삽입된  div 좌우배치*/
+#Box> div:nth-child(2)>div:nth-child(2){
+  float: left;
+}
+#Box> div:nth-child(2)>div:nth-child(3){
+  float: right;
+}
+
+#Box> div:nth-child(3){
+  width: 50%;
+  float: right;
+}
+
+#Box> div:nth-child(3) h3{
+  padding-left: 20px;
+}
+
+#Box> div:nth-child(3) div{
+  position: relative;
+  left: 30px;
+}
