@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>수강 신청 페이지</title><!--홈페이지 이름-->
+  </head>
+  <body>
+    <h1>수강 신청서</h1>
+    <form action="">
+      <p>
+      <label>성명<input type="text" name=""></label>
+    </p>
+    <p>
+    <label>비밀키<input type="text" password=""></label></p>
+    <p>
+    <label>주소<input type="text" userAddr=""></label></p>
+    <p>
+      <label>교육과정</label>
+    <select name="교육과정">
+      <option>---선택----</option>
+      <option value="오전반">오전반</option>
+      <option value="오후반">오후반</option></select>
+    </p>
+    <fieldset>
+      <legend>희망시간</legend>
+      <label>오전9시<input type="radio" name="time" value="오전 9시" checked></label>
+      <label>오전11시<input type="radio" name="time" value="오전 11시" checked></label>
+      <label>오후 1시<input type="radio" name="time" value="오후 1시" checked></label>
+    </fieldset>
+    <!--검색창 디자인-->
+    <fieldset>
+      <legend>알게된 동기</legend>
+      <label>친구<input type="checkbox" name="kind" value="친구" checkedbox></label>
+      <label>광고<input type="checkbox" name="kind" value="광고" checkedbox></label>
+      <label>잡지<input type="checkbox" name="kind" value="잡지" checkedbox></label>
+    </fieldset>
+    건의사항
+    <textarea name="기타 건의 사항" rows="30" cols="30"></textarea>
+    <input type="reset" value="다시">
+
+    <input type="submit" value="전송">
+    </form>
+  </body>
+</html>
