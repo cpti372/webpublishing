@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <style media="screen">
+      .i{
+        margin-top: auto;
+      }
+      form ul li{
+        list-style:none;
+        margin: 15px 0;
+        font-size:14px;
+      }
+
+      </style>
+  </head>
+  <body>
+    <form action="7.html" method="post">
+      <div class="i">
+
+     <h1>여름방학 특강 신청</h1>
+    <fieldset>
+      <legend>수강과목</legend>
+      <label for="영어회화(초급)">영어회화(초급)</label>
+      <input type="time">
+    </fieldset>
+
+    <fieldset>
+      <legend>신청자</legend>
+      <ul>
+      <li>
+      <label class="reg" for="이름">이름</label>
+      <input type="text" autofocus required>
+      </li>
+
+      <li>
+      <label class="reg2" for="s_id">학번</label>
+      <input type="text" placeholder="하이폰 없이 입력">
+      </li>
+
+        <li>
+        <label class="reg3" for="cnt">단체주문</label>
+        <input type="number" min="10" max="100" step="10">
+        </li>
+
+        <li>
+          <label for="reg4">학과</label>
+          <select id="class">
+            <optgroup label="공대">공대
+
+            <option>건축</option>
+            <option>기계</option>
+            <option>컴공</option>
+              </optgroup>
+
+              <optgroup label="인문대">인문대
+
+              <option>사학</option>
+              <option>어문</option>
+              <option>중문</option>
+                </optgroup>
+
+          </select>
+        </ll>
+        <li>
+          <label>관심분야</label>
+          <input type="text" list="choices">
+          <datalist id="choices">
+          <option value="grammar"></option>
+          <option value="grammar2"></option>
+          <option value="grammar3"></option>
+          </datalist>
+        </li>
+        <li>
+          <textarea name="intro" rows="8" cols="80">데이식스 콘서트 가고 싶다</textarea>
+        </li>
+        <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+      		<input type="number" name="num1" value="0">
+      		+<input type="number" name="num2" value="0">
+      		=<output name="result" for="num"></output>
+      	</form>
+        <li>
+          <label>10초 남음</label>
+          <progress value="50" max="100"></progress>
+        </li>
+        </ul>
+    </fieldset>
+      </div>
+  </body>
+</html>
